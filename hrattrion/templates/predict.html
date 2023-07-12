@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .main{
+        position: absolute;
+        font-size: xx-large;
+        left: 500px;
+        width: 600px;
+        top: 80px;
+    }
+    /* CSS for the form */
+    .form-container {
+      width: 500px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: absolute;
+      left: 500px;
+      top: 150px;
+      height:700px;
+    }
+
+    .form-field {
+      margin-bottom: 10px;
+    }
+
+    .form-field label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-field input[type="text"],
+    .form-field select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .form-submit {
+      margin-top: 10px;
+      position:absolute;
+      left: 210px;
+      top: 700px;
+      background-color: rgb(49, 49, 209);
+    }
+  </style>
+</head>
+<body>
+    <div class="main">
+        Enter the  details to Know the Attrition Status
+
+    </div>
+  <div class="form-container">
+    <form action="/display/" method="POST">
+      <div class="form-field">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+      </div>
+      <div class="form-field">
+        <label for="Department">Department</label>
+        <select id="Department" name="Department">
+          <option value="Research & Development">Research & Development        </option>
+          <option value="Sales">Sales        </option>
+          <option value="Human Resources ">Human Resources        </option>
+        </select>
+        
+      </div>
+      <div class="form-field">
+        <label for="distance">Distance:</label>
+        <input type="text" id="distance" name="distance">
+      </div>
+      <div class="form-field">
+        <label for="education">Education</label>
+        <select id="education" name="ed">
+          <option value="High school">High school       </option>
+          <option value="Degree">Degree</option>
+          <option value="Bachlers">Bachlers</option>
+          <option value="Masters">Masters</option>
+          <option value="Phd">Phd</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="education Feild">Education Feild</label>
+        <select id="education" name="education">
+          <option value="Human Resources">Human Resources        </option>
+          <option value="LifeSciences">Life Sciences        </option>
+          <option value="Marketing">Marketing</option>
+          <option value="Medical">Medical</option>
+          <option value="Other">Other</option>
+          <option value="Technical Degree">Technical Degree</option>
+        </select>
+        
+      </div>
+      <div class="form-field">
+        <label for="job_satisfaction">Job Satisfaction:</label>
+        <select id="job_satisfaction" name="job_satisfaction">
+          <option value="Bad">Bad         </option>
+          <option value="Good">Good </option>
+          <option value="Very Good"> Very Good </option>
+          <option value="Excellent">Excellent </option>
+          </select>
+      </div>
+      <div class="form-field">
+        <label for="Environment satisfaction">Environment satisfaction</label>
+        <select id="environment" name="environment">
+          <option value="Bad">Bad</option>
+          <option value="Good">Good </option>
+          <option value="Very good"> Very Good </option>
+          <option value="Excellent">Excellent </option>
+          </select>
+      </div>
+      <div class="form-field">
+        <label for="maritial_status">Marital Status</label>
+        <select id="maritial_status" name="maritial_status">
+          <option value="Single">Single       </option>
+          <option value="Married">Married  </option>
+          <option value="Divorced">Divorced     </option>
+        </select>
+        
+      </div>
+      
+      <div class="form-field">
+        <label for="monthly_income">Monthly Income:</label>
+        <input type="text" id="monthly_income" name="monthly_income">
+      </div>
+      <div class="form-field">
+        <label for="companies_worked">Number of Companies Worked:</label>
+        <input type="text" id="companies_worked" name="companies_worked">
+      </div>
+      <div class="form-field">
+        <label for="work_life">Work-Life Balance:</label>
+        <select id="work_life" name="work_life">
+          <option value="Bad">Bad         </option>
+          <option value="Good">Good </option>
+          <option value="Very good"> Very Good </option>
+          <option value="Excellent">Excellent </option>
+          </select>
+      </div>
+      <div class="form-field">
+        <label for="years_at_company">Years at Company:</label>
+        <input type="text" id="years_at_company" name="years_at_company">
+      </div>
+      <div class="form-submit">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR Analysis </title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js">
+
+    </script>
+<style>
+    .container{
+        background-color: rgb(199, 234, 241);
+        text-align: center;
+    }
+    .g1{
+        position: absolute;
+        left: 700px;
+        top: 80px;
+    }
+    .g2{
+        position: absolute;
+        left:20px;
+    }
+    .g3{
+        position: absolute;
+        top:550px;
+    }
+    .g5{
+        position: absolute;
+        top:1050px;
+    }
+    .g4{
+        position: absolute;
+        top:550px;
+        left:700px
+    }
+    .g6{
+        position: absolute;
+        top:1050px;
+        left:700px
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <h1>Attrition Analysis Dashboard</h1>
+        <div class="g1">{{ graph1|safe }}
+        </div>
+        <div class="g2">{{ graph2|safe }}
+        </div>
+        <div class="g3">{{ graph3|safe }}
+        </div>
+        <div class="g4">{{ graph4|safe }}
+        </div>
+        <div class="g5">{{ graph5|safe }}
+        </div>
+        <div class="g6">{{ graph6|safe }}
+        </div>
+</div>
+</body>
+</html>
